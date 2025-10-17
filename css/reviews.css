@@ -1,0 +1,161 @@
+/* === REVIEW SECTION === */
+.reviews {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #F8F8F8;
+  padding: 40px 10px;
+}
+
+.reviews-container {
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.reviews-summary {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.rating-score {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.rating-stars {
+  color: #ffa500;
+  font-size: 1.5rem;
+}
+
+/* === TESTIMONIALS (Carousel) === */
+.testimonials {
+  text-align: center;
+}
+
+.shadow-effect {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 8px;
+  border: 1px solid #ECECEC;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.shadow-effect p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.review-rating {
+  color: #ffa500;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.review-badge {
+  display: block;
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.google-icon {
+  height: 30px;              /* ← 適切なサイズ（視認性を保つ） */
+  width: auto;               /* ← アスペクト比維持 */
+  vertical-align: middle;    /* テキストやボタンとの高さを揃える */
+  object-fit: contain;       /* 潰れ防止（内部スケール調整） */
+  margin-top: 4px;           /* 微調整：レビュー下部での位置合わせ */
+  opacity: 0.9;              /* やや落ち着いた見た目に */
+  transition: transform 0.2s ease;
+}
+
+.testimonial-name {
+  margin-top: -10px;
+  display: inline-block;
+  background: linear-gradient(90deg, #70d3df, #d0f0f7, #70d3df);
+  color: #006c5f;
+  padding: 8px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 12px rgba(46, 125, 199, 0.25);
+}
+
+#customers-testimonials .itemCard {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.5;
+  transform: scale3d(0.85, 0.85, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+#customers-testimonials .owl-item.active.center .itemCard {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+.owl-carousel .owl-item img {
+  max-width: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#customers-testimonials.owl-carousel .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+  background: #ccc;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  transition: all 250ms ease-out;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+  background: #3F3228;
+  transform: scale(1.2);
+}
+
+/* === Review Button === */
+.review-section {
+  padding: 40px 0 20px;
+}
+
+.review-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.review-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.review-button:active {
+  transform: scale(0.98);
+}
